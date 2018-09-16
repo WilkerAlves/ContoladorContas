@@ -5,7 +5,7 @@ module.exports = function (ctx) {
     // app plugins (/src/plugins)
     plugins: [
       'i18n',
-      'axios'
+      'axios',
     ],
     css: [
       'app.styl'
@@ -49,13 +49,14 @@ module.exports = function (ctx) {
         'QItemTile',
         'QItemSeparator',
         'QItemMain',
+        'QItemSide',
       ],
       directives: [
         'Ripple'
       ],
       // Quasar plugins
       plugins: [
-        'Notify'
+        'Dialog'
       ]
       // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
       // i18n: 'de' // Quasar language

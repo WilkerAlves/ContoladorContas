@@ -1,11 +1,10 @@
 <script>
-  import  WwForm  from '../components/expenses/form.vue'
-  import  WwList  from '../components/expenses/list.vue'
+import WwForm from "../components/expenses/form.vue";
+import WwList from "../components/expenses/list.vue";
 
-  export default {
-    components: {WwForm,WwList}
-  }
-
+export default {
+  components: { WwForm, WwList },
+};
 </script>
 
 <template>
@@ -31,8 +30,8 @@
 </template>
 
 <style scoped>
-  .container {
-    padding: 20px;
-  }
+.container {
+  padding: 20px;
+}
 </style>
 

@@ -9,7 +9,8 @@ export default {
         id: "",
         amount: "",
         description: "",
-        data: date.formatDate(Date.now(), "DD/MM/YYYY")
+        data: date.formatDate(Date.now(), "DD/MM/YYYY"),
+        done: false
       }
     };
   },
