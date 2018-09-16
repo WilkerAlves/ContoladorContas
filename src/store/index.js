@@ -1,21 +1,20 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
+import { addExpense } from "../persistence";
 
-import example from './module-example'
+Vue.use(Vuex);
 
-Vue.use(Vuex)
-
-/*
- * If not building with SSR mode, you can
- * directly export the Store instantiation
- */
-
-export default function (/* { ssrContext } */) {
-  const Store = new Vuex.Store({
-    modules: {
-      example
+export default new Vuex.Store({
+  state: {
+    Expenses: {
+      List: []
     }
-  })
-
-  return Store
-}
+  },
+  mutations: {
+    ADD_EXPENSE(state, obj) {
+      console.log(obj)
+      addExpense(obj)
+      state.Expenses.List.unshift(obj);
+    }
+  }
+});

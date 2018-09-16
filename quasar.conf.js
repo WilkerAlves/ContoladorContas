@@ -25,7 +25,7 @@ module.exports = function (ctx) {
       // gzip: true,
       // analyze: true,
       // extractCSS: false,
-      extendWebpack (cfg) {
+      extendWebpack(cfg) {
       }
     },
     devServer: {
@@ -38,18 +38,17 @@ module.exports = function (ctx) {
       components: [
         'QLayout',
         'QLayoutHeader',
-        'QLayoutDrawer',
         'QPageContainer',
         'QPage',
         'QToolbar',
         'QToolbarTitle',
         'QBtn',
-        'QIcon',
+        'QInput',
         'QList',
-        'QListHeader',
         'QItem',
+        'QItemTile',
+        'QItemSeparator',
         'QItemMain',
-        'QItemSide'
       ],
       directives: [
         'Ripple'
@@ -111,7 +110,7 @@ module.exports = function (ctx) {
     },
     electron: {
       // bundler: 'builder', // or 'packager'
-      extendWebpack (cfg) {
+      extendWebpack(cfg) {
         // do something with Electron process Webpack cfg
       },
       packager: {
